@@ -1,30 +1,34 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import Banner from '../../components/Banner';
-import Card from '../../components/Cards'
+import Card from '../../components/Cards/index.jsx'
 //import { Link } from "react-router-dom";
-import axios from "axios";
 
 function Accueil() {
   const [data, setData] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:8080/api/properties/").then((res) => setData(res.data));
+  
+    useEffect(() => {
+      fetch("http://localhost:8080/api/properties/")
+      .then(response => response.json())
+      .then(data => setData(data))
+    },[])
 
-}, [])
+
   return (
     <React.Fragment>
    <Banner />
-   <div className="cards-container">
-				{data.map((appart, id) => (
-					<div className="CardList" key={id}>
+   <div className="CardList">
+				{data.map((item,id) => (
+      
+					<div className="CardItem" key={id}>
 						
-							<Card cover={appart.cover} title={appart.title} />
+            <Card cover={item.cover} title={item.title} />
 						
 					</div>
 				))}
 			</div>
    </React.Fragment>
   );
-}
+};
 
 export default Accueil;

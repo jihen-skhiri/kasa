@@ -1,0 +1,13 @@
+.AbtBanner{
+background-image: url("../assets/images/AboutBanner.png");
+background-repeat: no-repeat;
+background-size: cover;
+height:230px;
+width:80%;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:20px;
+margin:auto;
+
+}

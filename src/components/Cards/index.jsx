@@ -1,14 +1,16 @@
 import '../../styles/Card.css'
 
-function Card(cover,title) {
+function Card({cover,title}) {
     return (
-        <div className="CardList">
+       
         <article className="CardItem">
-            <img src={cover} alt={title} />
-            <h2>{title}</h2>
+            <img className="CardImage" src={cover} alt={title} />
+            
+            <h2 className="CardTitle">{title}</h2>
+            
         </article>
 
-        </div>
+      
     )
 }
 

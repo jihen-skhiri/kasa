@@ -18,13 +18,14 @@ root.render(
   <React.StrictMode>
      <Router>
       <Header />
+      
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/propos" element={<Propos />} />
                 <Route path="*" element={<Error />} />
                 <Route path="/details" element={<Details />} />
             </Routes>
-      <Footer />
+            <Footer />
       </Router>
   </React.StrictMode>
 );

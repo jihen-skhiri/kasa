@@ -1,6 +1,7 @@
 .BgBanner{
 background-image: url("../assets/images/Banner.png");
 background-repeat: no-repeat;
+background-size: cover;
 color:#ffffff;
 font-size:48px;
 font-weight:bold;

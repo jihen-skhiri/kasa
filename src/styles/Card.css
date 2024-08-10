@@ -1,15 +1,44 @@
 .CardList {
-background-color:#F6F6F6;
-width: 80%;
-height: 829px;
-margin:auto;
-border-radius: 25px;
+    background-color:#F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+    margin: 22px auto;
+    border-radius: 20px;
+    flex-basis: calc(100% / 3 );
+    
+   
+    
 }
 .CardItem{
-    width: 340px;
-    height: 340px;
-    background-color:#FF6060;
-    color:#ffffff;
-    font-size:18px;
-    font-weight:bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+   
+    
+   
+}
+.CardTitle{
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        color: #f1f1f1;
+        left: 15px;
+        top: 230px;
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 25.67px;
+        text-align: left;
+
+       
+}
+.CardImage{
+        display: flex;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
 }
