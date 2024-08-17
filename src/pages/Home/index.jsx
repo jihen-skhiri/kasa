@@ -1,8 +1,8 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import Banner from '../../components/Banner';
-import Card from '../../components/Cards/index.jsx'
-//import { Link } from "react-router-dom";
+import Card from '../../components/Cards'
+import { Link } from "react-router-dom";
 
 function Accueil() {
   const [data, setData] = useState([]);
@@ -21,9 +21,10 @@ function Accueil() {
 				{data.map((item,id) => (
       
 					<div className="CardItem" key={id}>
-						
+						<Link className="" to={`/logement/${item.id}`}>
             <Card cover={item.cover} title={item.title} />
-						
+						</Link>
+         
 					</div>
 				))}
 			</div>
