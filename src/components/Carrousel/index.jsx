@@ -6,18 +6,19 @@ import '../../styles/Carrousel.css'
 function Carrousel({ slides }) {
    console.log("slides",slides)
         const [current, setCurrent] = useState(0); 
-        const longeur = slides.length; 
+        const longeur = slides?.length; 
 
     
         const nextSlide = () => {
-            setCurrent(current === longeur- 1 ? 0 : current + 1); 
+            setCurrent(current === longeur - 1 ? 0 : current + 1); 
         };
         const prevSlide = () => {
-            setCurrent(current === 0 ? longeur- 1 : current - 1); 
+            setCurrent(current === 0 ? longeur - 1 : current - 1); 
         };
     
         return (
             <section id="carrousel-container">
+                <div className="Arrows">
                 {longeur> 1 && (
                     <img
                         src={left} 
@@ -26,7 +27,7 @@ function Carrousel({ slides }) {
                         className="leftArrow"
                     />
                 )}
-                {longeur> 1 && (
+                 {longeur> 1 && (
                     <img
                         src={right}
                         alt="droite"
@@ -34,7 +35,9 @@ function Carrousel({ slides }) {
                         className="rightArrow"
                     />
                 )}
-                {slides.map((slide, index) => (
+              
+               </div>
+                {slides?.map((slide, index) => (
                     <div
                         key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
                         className={

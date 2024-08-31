@@ -22,3 +22,11 @@ justify-content:center;
 align-items:center;
 border-radius:20px;
 }
+@media screen and (max-width: 768px ) {
+   .BgBanner{
+    width: 100%;
+   }
+   .TextBanner{
+    font-size: 24px;
+   }
+}

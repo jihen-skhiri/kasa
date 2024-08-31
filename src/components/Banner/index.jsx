@@ -1,5 +1,6 @@
 import '../../styles/Banner.css'
 
+
 function Banner() {
     return (
         <div className="BgBanner">

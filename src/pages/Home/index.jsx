@@ -1,8 +1,13 @@
 import React from 'react';
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../../styles/Home.css"
 import Banner from '../../components/Banner';
 import Card from '../../components/Cards'
-import { Link } from "react-router-dom";
+
+
+
+
 
 function Accueil() {
   const [data, setData] = useState([]);
@@ -16,6 +21,7 @@ function Accueil() {
 
   return (
     <React.Fragment>
+      <main className='styleMain'>
    <Banner />
    <div className="CardList">
 				{data.map((item,id) => (
@@ -28,6 +34,7 @@ function Accueil() {
 					</div>
 				))}
 			</div>
+      </main>
    </React.Fragment>
   );
 };

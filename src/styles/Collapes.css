@@ -1,6 +1,6 @@
 .collapse {
-	width: 60%;
-	margin:20px auto;
+	width: 100%;
+	margin: 31px auto 0;
 }
 .collapse__visible{
     background:#FF6060;
@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 40px;
+	height: 47px;
 	padding: 7px 15px;
 	border-radius: 5px;
 	width: 100%;
@@ -30,9 +30,8 @@
 }
 
 .chevron {
-	width: 10px;
-	transform: rotate(0deg);
-	transition: 0.4s 0.4s ease-in-out;
+	width: 15px;
+    height: 15px;
 
 }
 .rotated {
@@ -43,10 +42,17 @@
 p {
     margin: 0;
     padding: 22px ;
-    font-size: 20px;
+    font-size: 24px;
     
 }
-h2{
-  
+.collapse-title h2{
+	font-family: 'Montserrat';
     font-size: 24px;
+	
+}
+.about-style {
+		width: 60%;
+	}
+.equipList{
+	list-style: none;
 }

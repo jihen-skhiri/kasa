@@ -1,0 +1,44 @@
+.fiche-container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+    width: 80%;
+    margin:auto;
+}
+.collapse_container{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    
+
+}
+
+.rate-host-container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Info-logement{
+	    width: 100%;
+	    justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+	}
+
+    @media screen and (max-width: 768px ) {
+        
+        .Info-logement{
+            flex-direction: column;
+            justify-content:left;
+            
+        }
+        .rate-host-container{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .collapse_container{
+            flex-direction: column;
+            width:100%;
+        }
+    }

@@ -2,7 +2,7 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    margin:40px;
+    margin: 40px 100px ;
 }
 .HeaderImage{
     height: 68px;
@@ -14,5 +14,20 @@
     color: #000000;
     text-decoration: none;
     font-size: 24px;
+    font-weight: 500;
     text-align: right;
+}
+.StyledLink:focus{
+    text-decoration-line: underline;
+    
+}
+
+@media screen and (max-width: 768px ) {
+    .StyledLink{
+        font-size: 12px;
+    }
+    .HeaderImage{
+        height: 46px;
+        width: 145px;
+    }
 }

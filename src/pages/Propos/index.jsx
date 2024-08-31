@@ -1,5 +1,4 @@
 import React from 'react';
-//import { useEffect, useState } from "react";
 import '../../styles/Collapes.css'
 import AboutBanner from '../../components/AboutBanner';
 import Collapse from "../../components/Collapse";

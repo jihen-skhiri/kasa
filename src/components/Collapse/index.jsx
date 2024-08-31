@@ -20,7 +20,7 @@ export default function Collapse(props) {
 		// affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
 		<div className={`collapse ${props.aboutStyle}`}>
 			<div onClick={toggleState} className="collapse__visible">
-				<h2>{props.aboutTitle}</h2>
+				<h2 className="collapse-title">{props.aboutTitle}</h2>
 				<img
 					className={toggle ? "chevron rotated" : "chevron"}
 					src={Chevron}
