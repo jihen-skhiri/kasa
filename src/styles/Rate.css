@@ -9,3 +9,9 @@
     width: 15px;
     height: 15px;
 }
+@media screen and (max-width: 768px ) {
+    .rate-container{
+        display: flex;
+        align-items: flex-start;
+    }
+}

@@ -8,6 +8,7 @@ import Collapse from "../../components/Collapse";
 import Host from "../../components/Host";
 import Rate from "../../components/Rate";
 import Tags from "../../components/Tags";
+import Error from '../../pages/Error';
 
 
 function Detail() {
@@ -30,7 +31,8 @@ function Detail() {
                         data.map(() => setAppart(LogID));
                     }
                     if (LogID === undefined) {
-                        navigate("/404", { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
+                      navigate("/404", { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
+                    
                     }
                 } catch (error) {
                     console.error('Erreur lors de la récupération des images:', error);

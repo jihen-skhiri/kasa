@@ -10,8 +10,12 @@
     display: flex;
     flex-direction: row;
     gap: 6%;
-    
-
+    height: 400px;
+    width:100%;
+}
+.Host-Title h1{
+color:#FF6060;
+font-size: 36px;
 }
 
 .rate-host-container{
@@ -30,15 +34,24 @@
         
         .Info-logement{
             flex-direction: column;
-            justify-content:left;
+          
             
         }
         .rate-host-container{
             flex-direction: row-reverse;
             justify-content: space-between;
+            align-items: center;
+            width:100%;
+         
         }
         .collapse_container{
-            flex-direction: column;
-            width:100%;
+            flex-direction: column;    
         }
+        .Host-Title h1{
+        font-size: 18px;
+        }
+        .Host-Title h2{
+            font-size: 14px;
+            }
+        
     }

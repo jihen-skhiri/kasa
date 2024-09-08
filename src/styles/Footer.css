@@ -34,6 +34,8 @@
     }
     .text_footer p{ 
       font-size: 12px; 
-
+    }
+    .text_footer { 
+        width:140px ; 
     }
 }

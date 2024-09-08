@@ -9,8 +9,8 @@ const Router=()=> {
 <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/propos" element={<Propos />} />
-                <Route path="*" element={<Error />} />
                 <Route path="/logement/:id" element={<Details />} />
+                <Route path="*" element={<Error />} />
 </Routes>
            ) }
 export default Router;

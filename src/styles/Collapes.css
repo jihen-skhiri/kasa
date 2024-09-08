@@ -12,7 +12,6 @@
 	height: 47px;
 	padding: 7px 15px;
 	border-radius: 5px;
-	width: 100%;
     margin:10px;
 }
 .collapse__toggle{
@@ -39,7 +38,7 @@
 	transition: 0.4s ease-in-out;
 }
 
-p {
+.collapse__toggle p {
     margin: 0;
     padding: 22px ;
     font-size: 24px;
@@ -55,4 +54,20 @@ p {
 	}
 .equipList{
 	list-style: none;
+}
+
+@media screen and (max-width: 768px ) {
+	.collapse-title h2{
+		font-size: 12px;
+	}
+	.collapse__visible{
+		height: 30px;
+		margin:auto;
+	}
+
+	.collapse__toggle p {
+		font-size: 12px;
+	
+	}
+	
 }
