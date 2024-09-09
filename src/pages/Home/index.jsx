@@ -1,23 +1,10 @@
 import React from 'react';
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Home.css"
 import Banner from '../../components/Banner';
 import Card from '../../components/Cards'
 
-
-
-
-
-function Accueil() {
-  const [data, setData] = useState([]);
-  
-    useEffect(() => {
-      fetch("http://localhost:8080/api/properties/")
-      .then(response => response.json())
-      .then(data => setData(data))
-    },[])
-
+function Accueil({data}) {
 
   return (
     <React.Fragment>

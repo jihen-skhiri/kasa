@@ -1,4 +1,4 @@
-import '../../styles/AboutBanner.css'
+import './AboutBanner.css'
 function AboutBanner() {
     return (
         <div className="AbtBanner"></div>

@@ -27,3 +27,16 @@ color: #FF6060;
    color:#000000;
    margin: 3rem 0 2rem 0; 
 }
+
+@media screen and (max-width: 768px ) {
+    .Error-title{
+        font-size: 96px;
+        margin: 5rem 0 1rem 0;
+    }
+    .Error-text{
+        font-size: 18px;
+    }
+    .Error-link{
+        font-size: 14px;
+    } 
+}
