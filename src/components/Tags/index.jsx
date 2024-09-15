@@ -1,4 +1,4 @@
-import '../../styles/Tags.css'
+import './Tags.css'
 
  function Tag(props) {
 	return (

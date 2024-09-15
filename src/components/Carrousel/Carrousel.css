@@ -80,4 +80,7 @@
         width: 24px;
         height: 24px;
     }
+    .slider__number{
+        display: none;
+    }
 }

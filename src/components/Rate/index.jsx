@@ -1,4 +1,4 @@
-import '../../styles/Rate.css'
+import './Rate.css'
 import InactiveStar from "../../assets/images/Star-inactive.png";
 import ActiveStar from "../../assets/images/Star-active.png";
 

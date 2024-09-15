@@ -1,8 +1,7 @@
-import '../../styles/Details.css'
 import { useEffect, useState } from "react";
 import { useParams, useNavigate  } from "react-router-dom";
-import '../../styles/Details.css'
-import '../../styles/Collapes.css'
+import './Details.css'
+import '../../components/Collapse/Collapse.css'
 import Carrousel from "../../components/Carrousel";
 import Collapse from "../../components/Collapse";
 import Host from "../../components/Host";

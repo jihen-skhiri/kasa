@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Collapes.css'
+import '../../components/Collapse/Collapse.css'
 import AboutBanner from '../../components/AboutBanner';
 import Collapse from "../../components/Collapse";
 import aboutArray from "../../datas/collapes.json"; 

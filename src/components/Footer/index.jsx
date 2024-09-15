@@ -1,5 +1,5 @@
 import logoFoot from "../../assets/images/LOGO-foot.png";
-import '../../styles/Footer.css'
+import './Footer.css'
 function Footer() {
     return ( <footer className="styleFooter">
       <div className='img_footer'> <img src={logoFoot} alt=""/></div> 

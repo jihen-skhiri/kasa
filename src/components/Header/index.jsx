@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import logo from "../../assets/images/logo.png";
-import '../../styles/Header.css'
+import './Header.css'
 
  
 function Header() {
@@ -9,8 +9,8 @@ function Header() {
         <img className="HeaderImage" src={logo} alt=""/>
         </Link>
         <nav>
-            <Link className="StyledLink" to="/">Accueil</Link>
-            <Link className="StyledLink" to="/propos">A Propos</Link>
+            <NavLink className={({ isActive }) => isActive ? "active StyledLink" : "StyledLink"} to="/">Accueil</NavLink>
+            <NavLink className={({ isActive }) => isActive ? "active StyledLink" : "StyledLink"} to="/propos">A Propos</NavLink>
         </nav>
         </div>
     )

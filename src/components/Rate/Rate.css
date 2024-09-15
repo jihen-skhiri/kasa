@@ -1,18 +1,22 @@
 .rate-counter{
     display: flex;
     justify-content: space-between;
-    gap:15px;
+    gap:8px;
     width: 98px;
     height: 18px;
     margin-top: 24px;
 }
 .star{
-    width: 15px;
-    height: 15px;
+    width: 24px;
+    height: 24px;
 }
 @media screen and (max-width: 768px ) {
     .rate-container{
         display: flex;
         align-items: flex-start;
+    }
+    .star{
+        width: 13px;
+        height: 13px;
     }
 }

@@ -17,11 +17,16 @@
 color:#FF6060;
 font-size: 36px;
 }
+.Host-Title h2{
+    font-size: 18px;
+    font-family: "montserrat";
+    }
 
 .rate-host-container{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    margin:20px;
 }
 .Info-logement{
 	    width: 100%;
@@ -33,15 +38,14 @@ font-size: 36px;
     @media screen and (max-width: 768px ) {
         
         .Info-logement{
-            flex-direction: column;
-          
-            
+            flex-direction: column;  
         }
         .rate-host-container{
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
             width:100%;
+            margin:0;
          
         }
         .collapse_container{

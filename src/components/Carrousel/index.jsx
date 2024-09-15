@@ -1,7 +1,7 @@
 import { useState } from "react";
 import left from "../../assets/images/VectorLeft.png";
 import right from "../../assets/images/VectorRight.png";
-import '../../styles/Carrousel.css'
+import './Carrousel.css'
 
 function Carrousel({ slides }) {
    console.log("slides",slides)

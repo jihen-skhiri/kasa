@@ -1,7 +1,7 @@
 
  
 .Banner-container{
-background-image: url("../assets/images/Banner.png");
+background-image: url("../../assets/images/Banner.png");
 background-repeat: no-repeat;
 background-size: cover;
 color:#ffffff;
@@ -34,9 +34,6 @@ font-size: 48px;
 @media screen and (max-width: 768px ) {
    .Banner-container{
       width: 100%;
-   }
-   .BgBanner{
- 
    }
    .TextBanner{
     font-size: 24px;
