@@ -4,7 +4,6 @@ import right from "../../assets/images/VectorRight.png";
 import './Carrousel.css'
 
 function Carrousel({ slides }) {
-   console.log("slides",slides)
         const [current, setCurrent] = useState(0); 
         const longeur = slides?.length; 
 
@@ -47,7 +46,7 @@ function Carrousel({ slides }) {
                         }
                     >
                         {index === current && <img src={slide} alt="appartement à louer" />}
-                        {index === current && (
+                        {longeur> 1 && index === current && (
                             <span className="slider__number">
                                 {current + 1}/{longeur}
                             </span>

@@ -28,7 +28,6 @@ function Detail({data}) {
 
                 },[params, navigate,data])
         const slidePictures = Appart && Appart.pictures;
-        
         const tags = Appart && Appart.tags;
        const hostName=Appart.host;
         const equipments = Appart.equipments;
