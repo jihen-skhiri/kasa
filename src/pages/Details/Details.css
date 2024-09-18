@@ -54,9 +54,7 @@ font-size: 36px;
             align-items: center;
             width:100%;
             margin:20px 0;
-         
-           
-         
+
         }
         .collapse_container{
             flex-direction: column; 
