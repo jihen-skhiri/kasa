@@ -60,6 +60,7 @@ font-size: 36px;
         }
         .collapse_container{
             flex-direction: column; 
+            gap:0px;
             
         }
         .Host-Title h1{
