@@ -11,6 +11,30 @@ body {
 .styleMain{
     display: flex;
     flex-direction: column;
-    margin: 10px 100px;
+    margin: 0 auto;
    
 }
+.CardList {
+    width: 80%;
+    background-color:#F6F6F6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin:  40px auto;
+    padding: 20px;
+     
+}
+
+
+@media  screen and (max-width: 768px) {
+    .CardList {
+        width:100%;
+        grid-template-columns: 1fr; 
+        background:none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

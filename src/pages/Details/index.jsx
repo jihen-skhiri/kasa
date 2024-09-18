@@ -72,8 +72,9 @@ function Detail({data}) {
 					<Collapse 
 						aboutTitle="Description"
 						aboutText={Appart.description}
+                        aboutStyle="collapse-style"
 					/>
-					<Collapse aboutTitle="Équipements" aboutText={equip} />
+					<Collapse aboutTitle="Équipements" aboutText={equip}  aboutStyle="collapse-style"/>
 				</div>
 
         </div>

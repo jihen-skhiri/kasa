@@ -22,6 +22,8 @@
 }
 .slider img{
     width:100%;
+    object-fit: cover;
+    height: 415px;
 }
 .leftArrow{
   
@@ -73,6 +75,7 @@
 @media screen and (max-width: 768px ) {
     #carrousel-container{
         height: 255px;
+        margin:  20px auto;
     }
     .leftArrow{
         width: 24px;

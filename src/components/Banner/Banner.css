@@ -33,7 +33,8 @@ font-size: 48px;
 }
 @media screen and (max-width: 768px ) {
    .Banner-container{
-      width: 100%;
+      width: 90%;
+      margin:0 auto;
    }
    .TextBanner{
     font-size: 24px;
